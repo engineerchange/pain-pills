@@ -16,6 +16,8 @@ $reader.Close()
 ```
 **52,567,689 rows**
 
+---
+
 > Read in R file a chunk at a time; limit myself to 27 chunks (2.7M rows):
 
 Props to @amunategui: https://amunategui.github.io/dealing-with-large-files/index.html
