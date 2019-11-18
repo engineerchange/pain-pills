@@ -22,4 +22,20 @@ $reader.Close()
 
 Props to @amunategui: https://amunategui.github.io/dealing-with-large-files/index.html
 
-See [read-tsv.R](read-tsv.R)
+See [read-tsv_all.R](read-tsv_all.R)
+
+Some benchmarking in R:
+```
+pryr::mem_change(rm(data))
+```
+
+```
+rows,size
+1000000,530MB
+2000000,1.01GB
+3000000,1.58GB
+4000000,2.02GB
+5000000,2.48GB
+```
+
+In general, we can state that every 1M rows equates to about 0.50 GB memory. Due to lack of that much system memory, I abandon and use data extracts from DC, MD, VA (DMV).

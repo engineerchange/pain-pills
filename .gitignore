@@ -35,3 +35,6 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 arcos_all_washpost.tsv.gz
+arcos-dc-district-of-columbia-11001-itemized.tsv
+arcos-md-statewide-itemized.tsv.gz
+arcos-va-statewide-itemized.tsv.gz
